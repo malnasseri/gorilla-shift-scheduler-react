@@ -1,0 +1,72 @@
+import React from "react";
+import helpers from "../utils/helpers";
+import ScheduleView from "./ScheduleView";
+import AnnouncementsBuild from "./AnnouncementsBuild";
+import AnnouncementsView from "./AnnouncementsView";
+
+class ManagerHome extends React.Component {
+     constructor(props){
+        super(props);
+        this.state = {
+          title: "",
+          content: ""
+        }
+    }
+
+    componentDidMount = () => {
+        this.getAnnouncements();
+    }
+
+    // componentDidUpdate = (prevState) => {
+    //     if (prevState.title !== this.state.title || prevState.content !== this.state.content) {
+    //         this.getAnnouncements();
+    //     }
+    // }
+
+    getAnnouncements = () => {
+        helpers.getAnnouncements().then((response) => {
+            if(response.data.length > 0){
+              this.setState({
+                title: response.data[response.data.length -1].title,
+                content: response.data[response.data.length -1].content
+              });
+            }
+        });
+    };
+
+    updateAnnouncement = (title, content) => {
+        this.setState({
+            title: title,
+            content: content
+        })
+    }
+
+
+    render() {
+        return (
+            <div className="row">
+
+                <div className="col s12">
+                    <ul className="left">
+                        <li className="emp-management-btn"><a  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome/employeeAll">Employee Management<i className="material-icons right">group</i></a></li>
+                        <li className="schedules-btn"><a  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome/schedulesCreate">Schedules<i className="material-icons right">access_time</i></a></li>
+                    </ul>
+                    <h3 id="manager-h3"> Manager Dashboard</h3>
+                 </div>
+                <ScheduleView />
+
+                <div className="row">     
+                    <div className="col m6" id="manager-an-view">
+                        <AnnouncementsView title={this.state.title} content={this.state.content}/>
+                    </div>
+                    <div className="col m6" id="manager-add-an">
+                        <AnnouncementsBuild updateAnnouncement={this.updateAnnouncement} />
+                    </div>
+                </div>
+            </div>
+        );
+    }
+};
+
+export default ManagerHome;
+
