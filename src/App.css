@@ -181,46 +181,61 @@ background-color: #edf5e1;
 	} /* End of Media queries for 768px */
 
 @media screen and (max-width: 640px) {
-
+.nav-link {
+	padding:15px 2px 2px 2px;
+	font-size: 18px;
+	margin-left: 5px;
+}
 #loginForm {
-		margin-top: 0px;
+		margin-top: 10px;
+		margin-left: 100px;
 		padding: 10px 15px 5px 15px;
+		width: 280px;
 }
 
 .App h3{
-	font-size: 25px;
+	font-size: 16px;
 }
 
 #signup-form {
-		margin-top: 0px;
+		margin-top: 10px;
 		padding: 10px;
+		width: 300px;
+		margin-left: 90px;
+
 }
 
 .schedule {
-	font-size: 88%;
+	font-size: 80%;
 	margin-bottom: 30px;
 }
 
 .announcement {
-	width:  510px;
-	margin-left: -217px;
+	width:  250px;
+	margin-left: -67px;
 }
 
 #add-announcment{
-	width: 550px;
+	width: 350px;
+	margin-left: 70px;
+}
+.btn {
+	padding: 0px 10px 0px 10px;
 }
 
 #schedule-build {
-	font-size: 83%;
-	margin-right: 20px;
+	font-size: 75%;
+	margin-right: 0px;
+}
+#add-schedule {
+	margin-left: 35px;
+	}
+#add-emp-nav {
+	margin-left: 35px;
 }
 
 } /* End of Media queries for 640px */
 	
-
-
-
-
 
 
 
