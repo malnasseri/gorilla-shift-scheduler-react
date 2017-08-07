@@ -32,6 +32,7 @@ class SignupForm extends Component {
 			})
 			.then(response => {
 				console.log(response)
+                debugger
 				if (!response.data.errmsg) {
 					console.log('youre good')
 					this.setState({

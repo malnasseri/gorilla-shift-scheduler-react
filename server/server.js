@@ -46,6 +46,7 @@
   		res.sendFile(path.join(__dirname, '../build/'))
   	})
   }
+  
   /* Express app ROUTING */
   app.use('/auth', require('./auth'))
   // ====== Error handler ====

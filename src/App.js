@@ -13,6 +13,7 @@ import Employee from "./components/Employee";
 import EmployeeHome from "./components/children/EmployeeHome";
 import ScheduleView from "./components/children/ScheduleView";
 import AnnouncementsView from "./components/children/AnnouncementsView";
+import './App.css';
 
 const DisplayLinks = props => {
 	if (props.loggedIn) {
