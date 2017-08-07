@@ -87,10 +87,11 @@ class ManagerSchedulesCreate extends React.Component {
         return (
             
                 <div className="row">
-                     <Link to="/ManagerHome/employeeAll" id="home" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">Dashboard<i className="material-icons right">dashboard</i>">
-                            Employee Management<i className="material-icons right">group</i>
-                        </Link>
-                  
+
+                     <Link to="/ManagerHome" id="home" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">
+                     Dashboard<i className="material-icons right">dashboard</i>
+                     </Link>
+                   
                     <div className="col m12" id="schedule-build">
                         <div className="section">
                             <h5>Schedule Editor</h5>

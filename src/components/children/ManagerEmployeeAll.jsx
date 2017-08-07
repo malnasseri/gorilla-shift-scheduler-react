@@ -1,5 +1,6 @@
 import React from "react";
 import helpers from "../utils/helpers";
+import { Link } from "react-router-dom";
 
 class ManagerEmployeeAll extends React.Component {
     constructor(props){
@@ -136,7 +137,9 @@ class ManagerEmployeeAll extends React.Component {
             <div className="row">
                 <div className="row">
                     <div className="col s12"> 
-                         <a id="home2" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">Dashboard<i className="material-icons right">dashboard</i></a>
+                         <Link to="/ManagerHome" id="home2" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">
+                            Dashboard<i className="material-icons right">dashboard</i>
+                         </Link>
                     </div>
                 </div> 
                 
