@@ -60,7 +60,6 @@ body{
 	margin-right: 20px;
 
 
-
 }
 
 .navbar {
@@ -174,7 +173,6 @@ background-color: #edf5e1;
 	height: 340px;
 	margin-left: 20px;
 }
-
 #schedule-build {
 	margin-top: 20px;
 	margin-right: 20px;
@@ -186,8 +184,13 @@ background-color: #edf5e1;
 	padding:15px 2px 2px 2px;
 	font-size: 18px;
 
+	
 }
-
+.navbar {
+	
+	
+	
+}
 #loginForm {
 		margin-top: 10px;
 		margin-left: 40px;
@@ -213,12 +216,12 @@ background-color: #edf5e1;
 }
 
 .announcement {
-	width:  250px;
-	margin-left: -67px;
+	width:  200px;
+	margin-left: 0px;
 }
 
 #add-announcment{
-	width: 350px;
+	width: 320px;
 }
 .btn {
 	padding: 0px 10px 0px 10px;
@@ -236,12 +239,12 @@ background-color: #edf5e1;
 	font-size: 80%;
 	margin-right: 20px;
 }
-#gif{
-	margin-top: 10px;
-	width: 55px;
-	height: 55px;
+#sch-editor {
+	font-size: 14px;
 }
-
+.fullName {
+	font-size: 11px;
+}
 } /* End of Media queries for 640px */
 	
 

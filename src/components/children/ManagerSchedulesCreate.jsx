@@ -94,7 +94,7 @@ class ManagerSchedulesCreate extends React.Component {
                    
                     <div className="col m12" id="schedule-build">
                         <div className="section">
-                            <h5>Schedule Editor</h5>
+                            <h5 id="sch-editor">Schedule Editor</h5>
                             <table>
                                 <thead>
                                     <tr>
