@@ -52,7 +52,7 @@
   app.use('/auth', require('./auth'))
   // ====== Error handler ====
   app.use((err, req, res, next) => {
-  	console.log('====== ERROR =======')
+  	console.log('===== ERROR =======')
   	console.error(err.stack)
   	res.status(500)
   })
