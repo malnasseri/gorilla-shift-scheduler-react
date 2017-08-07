@@ -60,6 +60,7 @@ body{
 	margin-right: 20px;
 
 
+
 }
 
 .navbar {
@@ -184,11 +185,20 @@ background-color: #edf5e1;
 .nav-link {
 	padding:15px 2px 2px 2px;
 	font-size: 18px;
-	margin-left: 5px;
+
+
+
+
+	
+}
+.navbar {
+	
+	
+	
 }
 #loginForm {
 		margin-top: 10px;
-		margin-left: 100px;
+		margin-left: 40px;
 		padding: 10px 15px 5px 15px;
 		width: 280px;
 }
@@ -201,7 +211,7 @@ background-color: #edf5e1;
 		margin-top: 10px;
 		padding: 10px;
 		width: 300px;
-		margin-left: 90px;
+		margin-left: 30px;
 
 }
 
@@ -217,21 +227,27 @@ background-color: #edf5e1;
 
 #add-announcment{
 	width: 350px;
-	margin-left: 70px;
 }
 .btn {
 	padding: 0px 10px 0px 10px;
 }
-
-#schedule-build {
-	font-size: 75%;
-	margin-right: 0px;
+#addEmployee{
+	padding: 0px 10px 0px 10px;
 }
-#add-schedule {
-	margin-left: 35px;
-	}
-#add-emp-nav {
-	margin-left: 35px;
+#updateEmployee{
+	padding: 0px 10px 0px 10px;
+}
+#home2{
+	padding: 0px 10px 0px 10px;
+}
+#schedule-build {
+	font-size: 80%;
+	margin-right: 20px;
+}
+#gif{
+	margin-top: 10px;
+	width: 55px;
+	height: 55px;
 }
 
 } /* End of Media queries for 640px */

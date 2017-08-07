@@ -37,12 +37,12 @@ const DisplayLinks = props => {
 			<nav className="navbar">
 				<ul className="nav">
 					<li className="nav-item">
-						<Link to="/login" className="nav-link black-text">
+						<Link to="/login" id="login-btn" className="nav-link black-text">
 							login
 						</Link>
 					</li>
 					<li className="nav-item">
-						<Link to="/signup" className="nav-link black-text">
+						<Link to="/signup" id="signup-btn" className="nav-link black-text">
 							signup
 						</Link>
 					</li>
