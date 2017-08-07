@@ -214,15 +214,17 @@ background-color: #edf5e1;
 	font-size: 80%;
 	margin-bottom: 30px;
 }
-
+.card-panel {
+	padding-right: 
+}
 .announcement {
-	width:  240px;
+	max-width:  250px;
 	margin-left: 0px;
 	padding-right: 15px;
 }
 
 #add-announcment{
-	width: 320px;
+	max-width: 320px;
 }
 .btn {
 	padding: 0px 10px 0px 10px;
