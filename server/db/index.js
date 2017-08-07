@@ -1,11 +1,13 @@
  /*Mongo Database*/
 const mongoose = require('mongoose')
 mongoose.Promise = global.Promise
-const MONGO_URL = 'mongodb://localhost/gorilla-test2'
+let MONGO_URL;
 
 if (process.env.MONGODB_URI) {
+	MONGO_URL = process.env.MONGODB_URL
 	mongoose.connect(process.env.MONGODB_URI)
 } else {
+	MONGO_URL = 'mongodb://localhost/gorilla-test2'
 	mongoose.connect(MONGO_URL) // local mongo url
 }
 // should mongoose.connection be put in the call back of mongoose.connect???
