@@ -41,12 +41,13 @@
   if (process.env.NODE_ENV === 'production') {
   	const path = require('path')
   	console.log('YOU ARE IN THE PRODUCTION ENV')
-  	app.use('/static', express.static(path.join(__dirname, '../build/static')))
+  	app.use('/static', express.static(path.join(__dirname, '../build/static')));
+    app.use('/assets', express.static(path.join(__dirname, '../build/assets')))
   	app.get('/', (req, res) => {
   		res.sendFile(path.join(__dirname, '../build/'))
   	})
   }
-  
+
   /* Express app ROUTING */
   app.use('/auth', require('./auth'))
   // ====== Error handler ====
