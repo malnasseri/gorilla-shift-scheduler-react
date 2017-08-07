@@ -218,6 +218,7 @@ background-color: #edf5e1;
 .announcement {
 	width:  240px;
 	margin-left: 0px;
+	padding-left: 15px;
 }
 
 #add-announcment{
