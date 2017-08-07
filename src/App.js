@@ -132,8 +132,8 @@ class App extends Component {
 					<Route path="/signup" component={SignupForm} />
 				
 					<Route exact path="/ManagerHome" render={() => <ManagerHome loggedIn={this.state.loggedIn} />} />
-					<Route path="/ManagerHome/employeeAll" render={() => <ManagerEmployeeAll loggedIn={this.state.loggedIn} />} />
-          <Route path="/ManagerHome/schedulesCreate" render={() => <ManagerSchedulesCreate loggedIn={this.state.loggedIn} />} />
+					<Route path="/ManagerHome/employeeAll" component={ManagerEmployeeAll} />
+          <Route path="/ManagerHome/schedulesCreate" component={ManagerSchedulesCreate} />
 					<Route exact path="/EmployeeHome" render={() => <EmployeeHome loggedIn={this.state.loggedIn} />} />
 				</Switch>
 			</div>
