@@ -20,7 +20,7 @@ const DisplayLinks = props => {
 			<nav className="navbar">
 				<ul className="nav">
 					<li>
-						<Link to="#" className="nav-link black-text" onClick={props._logout}>
+						<Link to="/logout" className="nav-link black-text" onClick={props._logout}>
 							Logout
 						</Link>
 					</li>
@@ -125,7 +125,7 @@ class App extends Component {
 				<DisplayLinks _logout={this._logout} loggedIn={this.state.loggedIn} />
 				{/*  ROUTES */}
 				<Route exact path="/" render={() => <Main loggedIn={this.state.loggedIn} userType={this.state.userType} />} />
-				<Route exact path="/login" render={() => <LoginForm _login={this._login} />}
+				<Route exact path="/login" render={() => <LoginForm _login={this._login} loggedIn={this.state.loggedIn} />}
 				/>
 				<Route exact path="/signup" component={SignupForm} />
 				<Switch>

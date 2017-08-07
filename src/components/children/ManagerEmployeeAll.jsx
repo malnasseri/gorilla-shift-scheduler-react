@@ -41,7 +41,7 @@ class ManagerEmployeeAll extends React.Component {
     handleAddForm = (event) => {
         event.preventDefault();
         helpers.addEmployee(this.state.firstName, this.state.lastName, this.state.addressOne, this.state.addressTwo, this.state.city, this.state.state, this.state.zip, this.state.email, this.state.phone, this.state.phoneType).then((response) => {
-            this.state.emp_id = response.data._id;
+            this.setState({emp_id:response.data._id});
         
             helpers.addEmpSchedule(this.state.emp_id, this.state.firstName, this.state.lastName).then((response) => {
                 this.clearStates();

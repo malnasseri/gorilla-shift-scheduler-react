@@ -71,7 +71,8 @@ class ManagerSchedulesCreate extends React.Component {
                 empSchedule.friday = "";
                 empSchedule.saturday = "";
                 empSchedule.sunday = "";
-                this.state.selectedEmpSchedule = empSchedule;
+                
+                this.setState({selectedEmpSchedule:empSchedule});
             }
             return empSchedule;
         });

@@ -1,8 +1,6 @@
 import React from "react";
-import {Route, Link, Redirect } from 'react-router-dom';
-import Employee from "./Employee";
-import Manager from "./Manager";
-import helpers from "./utils/helpers";
+import { Redirect } from 'react-router-dom';
+
 
 class Main extends React.Component {
 	constructor(){

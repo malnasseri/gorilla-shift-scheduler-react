@@ -22,11 +22,13 @@ class LoginForm extends Component {
 	handleLogin(event) {
 		event.preventDefault()
 		console.log('handleSubmit')
+
 		this.props._login(this.state.email, this.state.password, this.state.userType);
+        console.log(this.props.loggedIn)
 		this.setState({
 			redirectTo: '/'
 		})
-
+        
 	}
 	render() {
 		if (this.state.redirectTo) {
