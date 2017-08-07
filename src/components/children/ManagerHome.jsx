@@ -49,7 +49,7 @@ class ManagerHome extends React.Component {
 
                 <div className="col s12">
                     <ul className="left">
-                         <li> <Link to="/ManagerHome/employeeAll" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
+                         <li> <Link to="/ManagerHome/employeeAll"  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
                             Employee Management<i className="material-icons right">group</i>
                         </Link></li>
                         <li> <Link to="ManagerHome/schedulesCreate" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
