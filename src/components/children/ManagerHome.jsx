@@ -3,6 +3,7 @@ import helpers from "../utils/helpers";
 import ScheduleView from "./ScheduleView";
 import AnnouncementsBuild from "./AnnouncementsBuild";
 import AnnouncementsView from "./AnnouncementsView";
+import { Link } from "react-router-dom";
 
 class ManagerHome extends React.Component {
      constructor(props){
@@ -49,8 +50,12 @@ class ManagerHome extends React.Component {
                 <div className="col s12">
                     <ul className="left">
                         <li className="emp-management-btn"><a  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome/employeeAll">Employee Management<i className="material-icons right">group</i></a></li>
-                        <li className="schedules-btn"><a  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome/schedulesCreate">Schedules<i className="material-icons right">access_time</i></a></li>
+                        
+                        
                     </ul>
+                    <Link to="ManagerHome/schedulesCreate" className="nav-link">
+                            Schedule Create
+                        </Link>
                     <h3 id="manager-h3"> Manager Dashboard</h3>
                  </div>
                 <ScheduleView />
