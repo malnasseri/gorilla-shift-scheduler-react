@@ -56,9 +56,7 @@
   	console.error(err.stack)
   	res.status(500)
   })
-  app.get("/", (req, res)=> {
-       res.sendFile(path.resolve(__dirname, "public", "index.html"));
-    });
+  
    //Getting Employees from the database
   app.get("/getAllEmployees", (req, res, next) => {
     employee.find({ "active": 1 }).exec((err, doc) => {
@@ -218,6 +216,10 @@
           res.send(doc);
         }
       });
+    });
+
+  app.get("*", (req, res)=> {
+       res.sendFile(path.resolve(__dirname, "public", "index.html"));
     });
   
 // ==== Starting Server =====
