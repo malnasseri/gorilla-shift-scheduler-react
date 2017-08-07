@@ -49,13 +49,14 @@ class ManagerHome extends React.Component {
 
                 <div className="col s12">
                     <ul className="left">
-                        <li className="emp-management-btn"><a  className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome/employeeAll">Employee Management<i className="material-icons right">group</i></a></li>
-                        
-                        
+                         <li> <Link to="/ManagerHome/employeeAll" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
+                            Employee Management<i className="material-icons right">group</i>
+                        </Link></li>
+                        <li> <Link to="ManagerHome/schedulesCreate" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
+                            Schedules<i className="material-icons right">access_time</i>
+                        </Link></li>
                     </ul>
-                    <Link to="ManagerHome/schedulesCreate" className="nav-link">
-                            Schedule Create
-                        </Link>
+                    
                     <h3 id="manager-h3"> Manager Dashboard</h3>
                  </div>
                 <ScheduleView />
