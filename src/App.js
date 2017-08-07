@@ -125,17 +125,15 @@ class App extends Component {
 				<h3 className="brand-logo">Gorilla Shift Scheduler</h3>
 				<DisplayLinks _logout={this._logout} loggedIn={this.state.loggedIn} />
 				{/*  ROUTES */}
-				<Route exact path="/" render={() => <Main loggedIn={this.state.loggedIn} userType={this.state.userType} />} />
-				<Route exact path="/login" render={() => <LoginForm _login={this._login} loggedIn={this.state.loggedIn} />}
-				/>
-				<Route exact path="/signup" component={SignupForm} />
 				<Switch>
+					<Route exact path="/" render={() => <Main loggedIn={this.state.loggedIn} userType={this.state.userType} />} />
+					<Route path="/login" render={() => <LoginForm _login={this._login} loggedIn={this.state.loggedIn} />}
+					/>
+					<Route path="/signup" component={SignupForm} />
+				
 					<Route exact path="/ManagerHome" render={() => <ManagerHome loggedIn={this.state.loggedIn} />} />
-					<Route exact path="/ManagerHome/employeeAll" component={ManagerEmployeeAll} />
-					<Route exact path="/ManagerHome/schedulesCreate" component={ManagerSchedulesCreate} />
-					<Route path="/ManagerHome/Manager" component={Manager} />
-				</Switch>
-				<Switch>
+					<Route path="/ManagerHome/employeeAll" component={ManagerEmployeeAll} />
+          <Route path="/ManagerHome/schedulesCreate" component={ManagerSchedulesCreate} />
 					<Route exact path="/EmployeeHome" render={() => <EmployeeHome loggedIn={this.state.loggedIn} />} />
 				</Switch>
 			</div>
