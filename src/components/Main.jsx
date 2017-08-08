@@ -92,17 +92,17 @@ class Main extends React.Component {
 	<div className="container">
 		<div className="row">
 			
-			<div className="col l3 s12">
-				<h5 className="white-text">Connect</h5>
+			<div className="col s12">
+				<h5 id="connect" className="white-text">Connect</h5>
 				<ul>
-					<a href="https://github.com/malnasseri" className="waves-effect waves-light btn grey darken-2 social github">
+					<a  href="https://github.com/malnasseri" className="waves-effect waves-light btn grey darken-2 social github">
 						<i className="fa fa-github"></i> github
 					</a>
 				</ul>
 			</div>
-			<div className="col l3 s12">
+			<div className="col s12">
 				<ul>
-					<a href="https://www.linkedin.com/in/mohammed-alnasseri-23a84913b" className="waves-effect waves-light btn blue darken-2 social linkedin">
+					<a  href="https://www.linkedin.com/in/mohammed-alnasseri-23a84913b" className="waves-effect waves-light btn blue darken-2 social linkedin">
 						<i className="fa fa-linkedin"></i> linkedin
 					</a>
 				</ul>
@@ -111,7 +111,7 @@ class Main extends React.Component {
 	</div>
 	<div className="footer-copyright">
 		<div className="container">
-			<div className="col l3 s12 black-text madeBy">
+			<div className="col  s12 black-text madeBy">
 				<img alt="gorilla" id="img" src="./assets/images/gorilla.ico"></img>
 				
 				Made by <a className="black-text text-lighten-4" >M.Alnasseri</a>
