@@ -1,12 +1,9 @@
 body{
-	background-image: url(/assets/images/background.gif);
+	background-image: url(./images/background.gif);
 	color:#edf5e1;
 	margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-.btn {
-	margin-top: 10px;
 }
 .announcement {
 	background-color: #edf5e1;
@@ -38,6 +35,17 @@ body{
 	width: 60px;
 	height: 60px;
 }
+#img{
+	
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	margin-top: 12px;
+
+}
+.madeBy {
+	font-size: 18px;
+}
 .App {
   text-align: center;
 }
@@ -64,7 +72,7 @@ body{
 
 .navbar {
 	height: 75px;
-	background-image: url(/assets/images/headerBG3.gif);
+	background-image: url(./images/headerBG3.gif);
 	
 }
 .nav-link {
@@ -166,10 +174,6 @@ background-color: #edf5e1;
 }
 
 
-.footer-copyright {
-	margin-bottom: -20px;
-}
-
 @media screen and (max-width: 768px) {
 		
 #add-announcment{
@@ -177,6 +181,7 @@ background-color: #edf5e1;
 	height: 340px;
 	margin-left: 20px;
 }
+
 #schedule-build {
 	margin-top: 20px;
 	margin-right: 20px;
@@ -184,76 +189,46 @@ background-color: #edf5e1;
 	} /* End of Media queries for 768px */
 
 @media screen and (max-width: 640px) {
-.nav-link {
-	padding:15px 2px 2px 2px;
-	font-size: 18px;
 
-	
-}
-.navbar {
-	
-	
-	
-}
 #loginForm {
-		margin-top: 10px;
-		margin-left: 40px;
+		margin-top: 0px;
 		padding: 10px 15px 5px 15px;
-		width: 280px;
 }
 
 .App h3{
-	font-size: 16px;
+	font-size: 25px;
 }
 
 #signup-form {
-		margin-top: 10px;
+		margin-top: 0px;
 		padding: 10px;
-		width: 300px;
-		margin-left: 30px;
-
 }
 
 .schedule {
-	font-size: 80%;
+	font-size: 88%;
 	margin-bottom: 30px;
 }
-.card-panel {
-	padding-right: 
-}
+
 .announcement {
-	max-width:  250px;
-	margin-left: 0px;
-	padding-right: 15px;
+	width:  510px;
+	margin-left: -217px;
 }
 
 #add-announcment{
-	max-width: 320px;
+	width: 550px;
 }
-.btn {
-	padding: 0px 10px 0px 10px;
-}
-#addEmployee{
-	padding: 0px 10px 0px 10px;
-}
-#updateEmployee{
-	padding: 0px 10px 0px 10px;
-}
-#home2{
-	padding: 0px 10px 0px 10px;
-}
+
 #schedule-build {
-	font-size: 80%;
+	font-size: 83%;
 	margin-right: 20px;
 }
-#sch-editor {
-	font-size: 14px;
-}
-.fullName {
-	font-size: 11px;
-}
+
 } /* End of Media queries for 640px */
 	
+
+
+
+
 
 
 
