@@ -122,7 +122,7 @@ class App extends Component {
 	render() {
 		return (
 			<div className="App">
-				<h3 className="brand-logo">Gorilla Shift Scheduler</h3>
+				<h3 className="brand-logo">Gorilla Scheduler</h3>
 				<DisplayLinks _logout={this._logout} loggedIn={this.state.loggedIn} />
 				{/*  ROUTES */}
 				<Switch>
