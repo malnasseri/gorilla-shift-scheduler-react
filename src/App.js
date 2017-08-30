@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-import { Route, Link, Switch } from 'react-router-dom'
+import { Route, Link, Switch, Redirect } from 'react-router-dom'
 import LoginForm from './components/children/LoginForm'
 import SignupForm from './components/children/SignupForm'
 import Main from './components/Main'
@@ -61,7 +61,8 @@ class App extends Component {
 		this.state = {
 			loggedIn: false,
 			user: null,
-			userType: ""
+			userType: "",
+			fireRedirect: false
 		}
 		this._logout = this._logout.bind(this)
 		this._login = this._login.bind(this)
@@ -96,7 +97,8 @@ class App extends Component {
 				this.setState({
 					loggedIn: false,
 					user: null,
-					userType: ""
+					userType: "",
+					fireRedirect: true
 				})
 			}
 		})
@@ -114,12 +116,15 @@ class App extends Component {
 					this.setState({
 						loggedIn: true,
 						user: response.data.user,
-						userType: response.data.user.userType
+						userType: response.data.user.userType,
+						fireRedirect: false
 					})
 			  }
 		 })
 	}
 	render() {
+		const { from } = this.state.location || '/';
+    const { fireRedirect } = this.state;
 		return (
 			<div className="App">
 				<h3 className="brand-logo">Gorilla Scheduler</h3>
@@ -136,6 +141,9 @@ class App extends Component {
           <Route path="/ManagerHome/schedulesCreate" component={ManagerSchedulesCreate} />
 					<Route exact path="/EmployeeHome" render={() => <EmployeeHome loggedIn={this.state.loggedIn} />} />
 				</Switch>
+				{fireRedirect && (
+          <Redirect to={'/'}/>
+        )}
 			</div>
 		)
 	}
