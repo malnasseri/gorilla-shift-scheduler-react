@@ -15,30 +15,30 @@ npm run dev
 Open a browser and go to [http://localhost:3000](http://localhost:3000)
 
 ## Tech
-Built with 
+### Built with 
 
-React, Node, Express, MongoDB, Passport.js
+### React, Node, Express, MongoDB, Passport.js.
 
 Important Dependencies Involved In Application Design
 ---
 **Client-Side**
 
-* react - javascript library for creating views/interfaces with components
+* react - javascript library for creating views/interfaces with components.
 
-* react-router v4 - maps react components to URL routes, thus enabling single-page navigation
+* react-router v4 - maps react components to URL routes, thus enabling single-page navigation.
 
-* axios - for making AJAX requests to the server
+* axios - for making AJAX requests to the server.
 
 
 **Server-Side**
 
-* express - a node.js http server framework and interface
+* express - a node.js http server framework and interface.
 
-* mongoose - mongoDB object modeling tool
+* mongoose - mongoDB object modeling tool.
 
 * passportJS
-    * passport - express authentication middleware
+    * passport - express authentication middleware.
     * passport-local - passport strategy for authenticating with an email and password.
 
-* bcrypt-nodejs - for encrypting user passwords before saving them to the database
+* bcrypt-nodejs - for encrypting user passwords before saving them to the database.
 
