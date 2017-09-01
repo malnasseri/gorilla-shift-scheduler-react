@@ -42,3 +42,14 @@ Important Dependencies Involved In Application Design
 
 * bcrypt-nodejs - for encrypting user passwords before saving them to the database.
 
+## Below Are some screen shots:
+
+![Gorilla Scheduler-1](./public/assets/images/gorilla1.png)
+![Gorilla Scheduler-2](./public/assets/images/gorilla2.png)
+![Gorilla Scheduler-3](./public/assets/images/gorilla3.png)
+![Gorilla Scheduler-4](./public/assets/images/gorilla4.png)
+![Gorilla Scheduler-5](./public/assets/images/gorilla5.png)
+![Gorilla Scheduler-6](./public/assets/images/gorilla6.png)
+![Gorilla Scheduler-7](./public/assets/images/gorilla7.png)
+![Gorilla Scheduler-8](./public/assets/images/gorilla8.png)
+
