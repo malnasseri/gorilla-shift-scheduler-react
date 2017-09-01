@@ -4,11 +4,11 @@
 View app live on [Heroku](https://gorilla-shift-scheduler.herokuapp.com/)
 
 ## Run locally
-Install dependencies
+### Install dependencies
 ```shell
 npm install
 ```
-Start the server
+### Start the server
 ```shell
 npm run dev
 ```
