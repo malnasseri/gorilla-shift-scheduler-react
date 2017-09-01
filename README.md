@@ -12,7 +12,7 @@ npm install
 ```shell
 npm run dev
 ```
-Open a browser and go to [http://localhost:3000](http://localhost:3000)
+### Open a browser and go to [http://localhost:3000](http://localhost:3000)
 
 ## Tech
 ### Built with 
