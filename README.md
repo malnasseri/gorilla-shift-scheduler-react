@@ -1,7 +1,7 @@
 # gorilla-shift-scheduler-react
-## Gorilla Scheduler is an employee management and scheduling app that allows…
-* Managers to manage and schedule employees
-* Employees to view work schedules
+## is an employee management and scheduling app that allows
+Managers to manage and schedule employees, And Employees to view work
+schedules Anytime and Anywhere.
 
 View app live on [Heroku](https://gorilla-shift-scheduler.herokuapp.com/)
 
