@@ -1,5 +1,5 @@
 # gorilla-shift-scheduler-react
-Gorilla Scheduler is an employee management and scheduling app that allows…
+## Gorilla Scheduler is an employee management and scheduling app that allows…
 * Managers to manage and schedule employees
 * Employees to view work schedules
 
@@ -10,17 +10,11 @@ Install dependencies
 ```shell
 npm install
 ```
-
-
-
 Start the server
 ```shell
 npm run dev
 ```
-
 Open a browser and go to [http://localhost:3000](http://localhost:3000)
-
-## M.alnasseri
 
 ## Tech
 Built with 
