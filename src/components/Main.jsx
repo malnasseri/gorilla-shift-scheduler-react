@@ -53,7 +53,7 @@ class Main extends React.Component {
       <div className="row">
         <div className="col s12 m4">
           <div className="icon-block">
-            <h2 className="center light-blue-text"><i className="meduim material-icons">flash_on</i></h2>
+            <h2 className="center light-blue-text"><i className="material-icons home">flash_on</i></h2>
             <h5 className="center">Quick Scheduling</h5>
             <p className="light"> an easy-to-use online employee management app. Keep track of each employee’s schedule. </p>
           </div>
@@ -63,7 +63,7 @@ class Main extends React.Component {
 
         <div className="col s12 m4">
           <div className="icon-block">
-            <h2 className="center light-blue-text"><i className="material-icons">group</i></h2>
+            <h2 className="center light-blue-text"><i className="material-icons home">group</i></h2>
             <h5 className="center">Real time Updating</h5>
 
             <p className="light">Managers can Add, Remove or Update Employees, And thier schedules, Also Managers can Add An Announcement to all employees, The app automatically updates changes in real time.</p>
@@ -71,7 +71,7 @@ class Main extends React.Component {
         </div>
         <div className="col s12 m4">
           <div className="icon-block">
-            <h2 className="center light-blue-text"><i className="material-icons">settings</i></h2>
+            <h2 className="center light-blue-text"><i className="material-icons home">settings</i></h2>
             <h5 className="center">Easy to work with</h5>
 
             <p className="light">With the Gorilla Sheduler app, Managers can quickly see who’s working,  Who’s scheduled and who’s available. </p>
