@@ -312,7 +312,8 @@ i.material-icons.home {
 	max-width: 415px;
 }
 .navbar {
-	max-width: 415px;
+	width: 415px;
+	
 }
 }
 
