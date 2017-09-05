@@ -302,14 +302,14 @@ i.material-icons.home {
 }
 .browser-default {
 	height: 25px;
-	width: 8px;
+	width: 6px;
 	background-color: black;
 	
 	
 }
 #schedule-build {
 	margin-left: -15px;
-	max-width: 415px;
+	max-width: 410px;
 }
 }
 
