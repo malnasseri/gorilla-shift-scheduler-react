@@ -1,7 +1,7 @@
 import React from "react";
 import helpers from "../utils/helpers";
 import ScheduleView from "./ScheduleView";
-import AnnouncementsView from "./AnnouncementsView";
+import EmployeeAnnouncementsView from "./EmployeeAnnouncementsView";
 
 class EmployeeHome extends React.Component {
      constructor(props){
@@ -15,12 +15,6 @@ class EmployeeHome extends React.Component {
         this.getAnnouncements();
     };
 
-    // componentDidUpdate = (prevState) => {
-    //     if (prevState.title !== this.state.title || prevState.content !== this.state.content) {
-    //         this.getAnnouncements();
-    //     }
-    // };
-
     getAnnouncements() {
         helpers.getAnnouncements().then((response) => {
           if(response.data.length > 0){
@@ -32,8 +26,7 @@ class EmployeeHome extends React.Component {
         });
     };
 
-    render() {
-        
+    render() { 
         return (
             <div>
               <div className="row">
@@ -42,14 +35,9 @@ class EmployeeHome extends React.Component {
                 </div>
               </div>
               <div className="row">
-                <div className="col s5">
+                <div className="col s12">
+                <EmployeeAnnouncementsView title={this.state.title} content={this.state.content}/>
                 </div>
-                <div className="col s4">
-                <AnnouncementsView title={this.state.title} content={this.state.content}/>
-                </div>
-                 <div className="col s4">
-                </div>
-
               </div>
               <div className="col s12">
                 <ScheduleView />

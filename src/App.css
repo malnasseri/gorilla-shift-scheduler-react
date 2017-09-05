@@ -9,11 +9,18 @@ body{
 	margin-top: 10px;
 }
 .announcement {
-	background-color: #edf5e1;
-	color: #05386b;
+	background-color: #4D4D4D;
+	color: #edf5e1;
 	width: 300px;
 	float: left;
 	margin:10px 0 20px 20px;
+
+}
+.emp-announcement {
+	background-color: #4D4D4D;
+	color: #edf5e1;
+	width: 100%;
+	margin:0 0px 10px 0px;
 
 }
 .schedule{
@@ -97,8 +104,8 @@ background-color: #edf5e1;
 	width: 360px;
 	height: 370px;
 	margin-left: 60px;
-	background-color: #edf5e1;
-		color: #05386b;
+	background-color: #4D4D4D;
+	color: #edf5e1;
 
 	
 }
