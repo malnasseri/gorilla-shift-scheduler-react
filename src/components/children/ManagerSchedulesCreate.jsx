@@ -118,7 +118,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td className="">
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="monday" value={schedules.monday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="monday" value={schedules.monday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -134,7 +134,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="tuesday" value={schedules.tuesday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="tuesday" value={schedules.tuesday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -150,7 +150,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="wednesday" value={schedules.wednesday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="wednesday" value={schedules.wednesday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -166,7 +166,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="thursday" value={schedules.thursday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="thursday" value={schedules.thursday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -182,7 +182,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="friday" value={schedules.friday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="friday" value={schedules.friday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -198,7 +198,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="saturday" value={schedules.saturday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="saturday" value={schedules.saturday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>
@@ -214,7 +214,7 @@ class ManagerSchedulesCreate extends React.Component {
                                                 </td>
                                                 <td>
                                                     <div className="input-field schedule">
-                                                        <select className="browser-default" name="sunday" value={schedules.sunday} onChange={this.handleUserChange.bind(this, i)}>
+                                                        <select className="browser-default schedule" name="sunday" value={schedules.sunday} onChange={this.handleUserChange.bind(this, i)}>
                                                         <option value=""></option>
                                                         <option value="OFF">OFF</option>
                                                         <option value="8am-5pm">8am-5pm</option>

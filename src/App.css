@@ -271,13 +271,15 @@ i.material-icons.home {
 }
 .announcement {
 	max-width:  none;
-	margin-left: 30px;
+	width: 380px;
+	margin-left: -20px;
 	margin-bottom: 10px;
 	font-size: 90%;
 }
 #add-announcment{
 	max-width: none;
-	margin-left: 10px;
+	width: 380px;
+	margin-left: 0px;
 }
 .schedule {
 	margin-bottom: 0px;
@@ -300,14 +302,14 @@ i.material-icons.home {
 	padding-left: 9px;
 	
 }
-.browser-default {
+.browser-default.schedule {
 	height: 25px;
-	width: 4px;
-	
-	
-	
+	width: 4px;	
 }
+
 #schedule-build {
+	background-color: #4D4D4D;
+	color: #edf5e1;
 	margin-left: -15px;
 	width: 415px;
 }
@@ -315,6 +317,14 @@ i.material-icons.home {
 	width: 405px;
 	
 }
+.input-field.schedule {
+	border-radius: 5px;
+    
+}
+#home, #home2 {
+	font-size: 90%;
+}
+
 }
 
 
