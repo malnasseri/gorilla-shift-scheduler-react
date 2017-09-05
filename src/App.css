@@ -272,14 +272,14 @@ i.material-icons.home {
 .announcement {
 	max-width:  none;
 	width: 380px;
-	margin-left: -20px;
+	margin-left: -10px;
 	margin-bottom: 10px;
 	font-size: 90%;
 }
 #add-announcment{
 	max-width: none;
 	width: 380px;
-	margin-left: 0px;
+	margin-left: -10px;
 }
 .schedule {
 	margin-bottom: 0px;
