@@ -307,9 +307,10 @@ i.material-icons.home {
 	
 	
 }
-/*#schedule-build {
-	margin-left: -10px;
-}*/
+#schedule-build {
+	margin-left: -15px;
+	max-width: 415px;
+}
 }
 
 
