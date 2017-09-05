@@ -124,7 +124,11 @@ background-color: #edf5e1;
 		padding: 0px 20px 10px 20px;
 
 }
-
+.browser-default.schedule {
+	border-radius: 5px;
+	background-color: white;
+    
+}
 #home{
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -305,6 +309,7 @@ i.material-icons.home {
 .browser-default.schedule {
 	height: 25px;
 	width: 4px;	
+
 }
 
 #schedule-build {
@@ -319,6 +324,7 @@ i.material-icons.home {
 }
 .input-field.schedule {
 	border-radius: 5px;
+
     
 }
 #home, #home2 {
