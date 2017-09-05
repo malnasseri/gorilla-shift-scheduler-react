@@ -266,12 +266,14 @@ i.material-icons.home {
 @media screen and (max-width: 480px) {
 
 .manager-btns {
-	margin-left: 65px;
+	font-size: 90%;
+	margin-left: 55px;
 }
 .announcement {
 	max-width:  none;
 	margin-left: 30px;
-	margin-bottom: 10px
+	margin-bottom: 10px;
+	font-size: 90%;
 }
 #add-announcment{
 	max-width: none;
@@ -279,6 +281,9 @@ i.material-icons.home {
 }
 .schedule {
 	margin-bottom: 0px;
+}
+#manager-h3 {
+	float: left;
 }
 }
 
