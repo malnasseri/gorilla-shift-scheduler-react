@@ -46,21 +46,15 @@ class Main extends React.Component {
 				</Link>
       </div>
       <br></br>
-
     </div>
   </div>
-
-
   <div className="container">
     <div className="section">
-
-     
       <div className="row">
         <div className="col s12 m4">
           <div className="icon-block">
-            <h2 className="center light-blue-text"><i className="material-icons">flash_on</i></h2>
+            <h2 className="center light-blue-text"><i className="meduim material-icons">flash_on</i></h2>
             <h5 className="center">Quick Scheduling</h5>
-
             <p className="light"> an easy-to-use online employee management app. Keep track of each employee’s schedule. </p>
           </div>
         </div>
