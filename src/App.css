@@ -285,6 +285,31 @@ i.material-icons.home {
 #manager-h3 {
 	float: left;
 }
+.manager-emp-btns {
+	background: black;
+	margin-top: 20px;
+
+}
+.add-sch, .clear-sch {
+	font-size: 9px;
+	margin-left: 0px;
+	width: 40px;
+	padding-left: 4.5px;
+}
+.add-sch {
+	padding-left: 9px;
+	
+}
+.browser-default {
+	height: 25px;
+	width: 8px;
+	background-color: black;
+	
+	
+}
+#schedule-build {
+	margin-left: -10px;
+}
 }
 
 

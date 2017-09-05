@@ -98,19 +98,20 @@ class ManagerSchedulesCreate extends React.Component {
                             <table>
                                 <thead>
                                     <tr>
-                                        <th data-field="name">&#160;&#160;Name</th>
-                                        <th data-field="name">&#160;&#160;&#160;Mon</th>
-                                        <th data-field="name">&#160;&#160;&#160;Tues</th>
+                                        <th data-field="name">Name</th>
+                                        <th data-field="name">Mon</th>
+                                        <th data-field="name">&#160;&#160;Tue</th>
                                         <th data-field="name">&#160;&#160;Wed</th>
-                                        <th data-field="name">&#160;&#160;&#160;Thurs</th>
-                                        <th data-field="name">&#160;&#160;&#160;&#160;Fri</th>
-                                        <th data-field="name">&#160;&#160;&#160;Sat</th>
-                                        <th data-field="name">&#160;&#160;&#160;Sun</th>
+                                        <th data-field="name">&#160;&#160;Thu</th>
+                                        <th data-field="name">&#160;&#160;&#160;Fri</th>
+                                        <th data-field="name">&#160;&#160;Sat</th>
+                                        <th data-field="name">&#160;&#160;Sun</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     {this.state.empSchedules.map((schedules, i) => {
                                         return (
+
                                             <tr className="table-row" key={i}>
                                                 <td className="fullName" id={this.state.empSchedules[i]._id}>
                                                 {schedules.firstName} {schedules.lastName}
@@ -227,13 +228,15 @@ class ManagerSchedulesCreate extends React.Component {
                                                     </select>
                                                     </div>
                                                 </td>
-                                                <td>
-                                                    <button id={i} className="addScheduleBtn" onClick={this.handleUpdateEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3">Add</button>
+
+                                               <td>
+                                                    <button id={i} onClick={this.handleUpdateEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 add-sch">Add</button>
+                                                
+                                               
+                                                    <button id={i} onClick={this.handleClearEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 clear-sch">Clear</button>
                                                 </td>
-                                                <td>
-                                                    <button id={i} className="clearSchedule" onClick={this.handleClearEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3">Clear</button>
-                                                </td>
-                                            </tr>
+                                                 </tr>
+                                            
                                         );
                                     }, this)}
                                 </tbody>

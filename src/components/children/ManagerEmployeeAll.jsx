@@ -328,17 +328,17 @@ class ManagerEmployeeAll extends React.Component {
                             <div className="row">
                                 <div className="col s4">
                                     <button id="addEmployee" className="btn btn-large waves-effect waves-light green accent-3" type="submit" value="Submit">Add
-                                        <i className="material-icons right">person_add</i>
+                                        <i className="material-icons right manager-btns-icons">person_add</i>
                                     </button>
                                 </div>
                                 <div className="col s4">
                                     <a id="updateEmployee" className="btn btn-large waves-effect waves-light blue accent-3" onClick={this.handleUpdateForm}>Update
-                                        <i className="material-icons right">edit</i>
+                                        <i className="material-icons right manager-btns-icons">edit</i>
                                     </a>
                                 </div>
                                 <div className="col s4">
                                     <a id="removeEmployee" className="btn btn-large waves-effect waves-light red accent-3" onClick={this.handleRemoveForm}>Remove
-                                        <i className="material-icons right">person_outline</i>
+                                        <i className="material-icons right manager-btns-icons">person_outline</i>
                                     </a>
                                 </div>
                             </div>
