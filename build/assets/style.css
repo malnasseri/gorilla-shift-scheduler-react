@@ -1,0 +1,247 @@
+body{
+	background-image: url(./images/background.gif);
+	color:#edf5e1;
+	margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.announcement {
+	background-color: #edf5e1;
+	color: #05386b;
+	width: 300px;
+	float: left;
+	margin:10px 0 20px 20px;
+
+}
+.schedule{
+	background-color: #edf5e1;
+	color: #05386b;
+	padding: 10px;
+}
+.emp-h2 {
+	float: right;
+	font-size: 35px;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	margin-right: 25px;
+}
+
+#gif{
+	margin-top: 10px;
+	width: 60px;
+	height: 60px;
+}
+#img{
+	
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+	margin-top: 12px;
+
+}
+.madeBy {
+	font-size: 18px;
+}
+.App {
+  text-align: center;
+}
+
+.App h3{
+	margin-top: 28px;
+	float: left;
+	font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+	font-size: 32px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	margin-left: 15px; 
+	color:black;
+}
+
+.nav {
+	float: right;
+	margin-right: 20px;
+
+
+}
+
+.navbar {
+	height: 75px;
+	background-image: url(./images/headerBG3.gif);
+	
+}
+.nav-link {
+	padding-top: 12px;
+	font-size: 22px;
+}
+#loginForm {
+		margin-top: 30px;
+		background-color: #edf5e1;
+		color: #05386b;
+
+}
+#login-header {
+	background-color: #edf5e1;
+		color: #05386b;
+}
+#signup-form {
+background-color: #edf5e1;
+		color: #05386b;
+		margin-top: 30px;
+}
+
+#manager-an-view {
+	float: right;
+	margin-right: 100px;
+	width: 280px;
+	
+}
+#add-announcment{
+	width: 360px;
+	height: 370px;
+	margin-left: 60px;
+	background-color: #edf5e1;
+		color: #05386b;
+
+	
+}
+
+.emp-management-btn {
+	background-color: #edf5e1;
+		color: #05386b;
+		margin-bottom: 10px;
+		margin-left: 10px;
+}
+
+
+#schedule-build {
+	background-color: #edf5e1;
+		color: #05386b;
+		padding: 0px 20px 10px 20px;
+
+}
+
+#home{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 20px;
+	font-size: 16px;
+	float: left;
+	box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#home:active {
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+
+#allEmployees {
+	margin-top: 10px;
+	padding-left: 30px;
+	background-color: #edf5e1;
+		color: #05386b;
+}
+#add-schedule {
+	padding-top: 10px;
+	margin-top: 10px;
+	margin-left: 5px;
+	background-color: #edf5e1;
+	color: #05386b;
+}
+#home2 {
+	margin-left: 20px;
+	font-size: 16px;
+	box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+#home2:active {
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(3px);
+}
+#manager-h3 {
+	color: #edf5e1;
+	margin-top: 30px;
+	margin-right: 15px;
+	float: right;
+}
+.btn:active {
+	box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+
+@media screen and (max-width: 768px) {
+		
+#add-announcment{
+	width: 330px;
+	height: 340px;
+	margin-left: 20px;
+}
+
+#schedule-build {
+	margin-top: 20px;
+	margin-right: 20px;
+}
+	} /* End of Media queries for 768px */
+
+@media screen and (max-width: 640px) {
+
+#loginForm {
+		margin-top: 0px;
+		padding: 10px 15px 5px 15px;
+}
+
+.App h3{
+	font-size: 25px;
+}
+
+#signup-form {
+		margin-top: 0px;
+		padding: 10px;
+}
+
+.schedule {
+	font-size: 88%;
+	margin-bottom: 30px;
+}
+
+.announcement {
+	width:  510px;
+	margin-left: -217px;
+}
+
+#add-announcment{
+	width: 550px;
+}
+
+#schedule-build {
+	font-size: 83%;
+	margin-right: 20px;
+}
+
+} /* End of Media queries for 640px */
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
