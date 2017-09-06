@@ -20,5 +20,4 @@ db.once('open', () => {
 		`You have successfully connected to your mongo database: ${MONGODB_URI}`
 	)
 })
-
 module.exports = db

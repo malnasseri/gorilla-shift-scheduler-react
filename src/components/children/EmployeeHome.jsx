@@ -14,7 +14,6 @@ class EmployeeHome extends React.Component {
     componentDidMount = () => {
         this.getAnnouncements();
     };
-
     getAnnouncements() {
         helpers.getAnnouncements().then((response) => {
           if(response.data.length > 0){
@@ -25,7 +24,6 @@ class EmployeeHome extends React.Component {
           }
         });
     };
-
     render() { 
         return (
             <div>
@@ -46,8 +44,4 @@ class EmployeeHome extends React.Component {
         );
     }
 };
-
 export default EmployeeHome;
-
-
-

@@ -14,14 +14,12 @@ body{
 	width: 300px;
 	float: left;
 	margin:10px 0 20px 20px;
-
 }
 .emp-announcement {
 	background-color: #4D4D4D;
 	color: #edf5e1;
 	width: 100%;
 	margin:0 0px 10px 0px;
-
 }
 .schedule{
 	background-color: #edf5e1;
@@ -39,7 +37,6 @@ body{
 	line-height: 26.4px;
 	margin-right: 25px;
 }
-
 #gif{
 	margin-top: 10px;
 	width: 60px;
@@ -48,7 +45,6 @@ body{
 .App {
   text-align: center;
 }
-
 .App h3{
 	margin-top: 28px;
 	float: left;
@@ -61,18 +57,13 @@ body{
 	margin-left: 15px; 
 	color:black;
 }
-
 .nav {
 	float: right;
 	margin-right: 20px;
-
-
 }
-
 .navbar {
 	height: 75px;
 	background-image: url(/assets/images/headerBG3.gif);
-	
 }
 .nav-link {
 	padding-top: 12px;
@@ -82,7 +73,6 @@ body{
 		margin-top: 30px;
 		background-color: #edf5e1;
 		color: #05386b;
-
 }
 #login-header {
 	background-color: #edf5e1;
@@ -93,12 +83,10 @@ background-color: #edf5e1;
 		color: #05386b;
 		margin-top: 30px;
 }
-
 #manager-an-view {
 	float: right;
 	margin-right: 100px;
 	width: 280px;
-	
 }
 #add-announcment{
 	width: 360px;
@@ -106,28 +94,21 @@ background-color: #edf5e1;
 	margin-left: 60px;
 	background-color: #4D4D4D;
 	color: #edf5e1;
-
-	
 }
-
 .emp-management-btn {
 	background-color: #edf5e1;
 		color: #05386b;
 		margin-bottom: 10px;
 		margin-left: 10px;
 }
-
-
 #schedule-build {
 	background-color: #edf5e1;
 		color: #05386b;
 		padding: 0px 20px 10px 20px;
-
 }
 .browser-default.schedule {
 	border-radius: 5px;
-	background-color: white;
-    
+	background-color: white;  
 }
 #home{
 	margin-top: 10px;
@@ -138,11 +119,9 @@ background-color: #edf5e1;
 	box-shadow: 0 8px 10px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 #home:active {
-  
   box-shadow: 0 5px #666;
   transform: translateY(3px);
 }
-
 #allEmployees {
 	margin-top: 10px;
 	padding-left: 30px;
@@ -200,13 +179,6 @@ i.material-icons.home {
 .nav-link {
 	padding:15px 2px 2px 2px;
 	font-size: 18px;
-
-	
-}
-.navbar {
-	
-	
-	
 }
 #loginForm {
 		margin-top: 10px;
@@ -214,19 +186,15 @@ i.material-icons.home {
 		padding: 10px 15px 5px 15px;
 		width: 280px;
 }
-
 .App h3{
 	font-size: 16px;
 }
-
 #signup-form {
 		margin-top: 10px;
 		padding: 10px;
 		width: 300px;
 		margin-left: 30px;
-
 }
-
 .schedule {
 	font-size: 80%;
 	margin-bottom: 30px;
@@ -239,7 +207,6 @@ i.material-icons.home {
 	margin-left: 0px;
 	padding-right: 15px;
 }
-
 #add-announcment{
 	max-width: 320px;
 }
@@ -294,7 +261,6 @@ i.material-icons.home {
 .manager-emp-btns {
 	background: black;
 	margin-top: 20px;
-
 }
 .add-sch, .clear-sch {
 	font-size: 9px;
@@ -304,14 +270,11 @@ i.material-icons.home {
 }
 .add-sch {
 	padding-left: 9px;
-	
 }
 .browser-default.schedule {
 	height: 25px;
 	width: 4px;	
-
 }
-
 #schedule-build {
 	background-color: #4D4D4D;
 	color: #edf5e1;
@@ -320,27 +283,11 @@ i.material-icons.home {
 }
 .navbar {
 	width: 405px;
-	
 }
 .input-field.schedule {
-	border-radius: 5px;
-
-    
+	border-radius: 5px;  
 }
 #home, #home2 {
 	font-size: 90%;
 }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-

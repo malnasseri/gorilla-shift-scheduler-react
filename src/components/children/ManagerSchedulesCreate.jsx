@@ -20,7 +20,6 @@ class ManagerSchedulesCreate extends React.Component {
         empSchedules: [],
       };
     };
-
     componentDidMount() {
         helpers.getEmpSchedules().then((response) => {
           if (response !== this.state.empSchedules) {
@@ -28,7 +27,6 @@ class ManagerSchedulesCreate extends React.Component {
           }
         });
     };
-
     handleUserChange = (index, event) => {
         const updatedEmpSchedules = this.state.empSchedules.map((empSchedule, j) => {
             if(index === j){
@@ -41,7 +39,6 @@ class ManagerSchedulesCreate extends React.Component {
         });
         this.setState({ empSchedules: updatedEmpSchedules});
     };
-
     handleUpdateEmpSchedule = (event) => {
         const saveButtonBlue = document.getElementById(event);
         saveButtonBlue.innerHTML = "Add";
@@ -50,12 +47,10 @@ class ManagerSchedulesCreate extends React.Component {
         if (this.state.selectedEmpSchedule !== "") {
             helpers.updateEmpSchedule(this.state.selectedEmpSchedule).then((response) => {
                 const empName = this.state.selectedEmpSchedule.firstName + " " + this.state.selectedEmpSchedule.lastName + "'s ";
-                // Materialize.toast(empName + "schedule updated", 2000);
                 this.clearStates();
             });
         }
     };
-
     handleClearEmpSchedule(i, event) {
         // i is the index of the currently selected employee
         event.preventDefault();
@@ -64,7 +59,6 @@ class ManagerSchedulesCreate extends React.Component {
                 const saveButton = document.getElementById(i);
                 saveButton.innerHTML = "save";
                 saveButton.className = "btn btn-small waves-effect waves-light blue accent-3";
-
                 empSchedule.monday = "";
                 empSchedule.tuesday = "";
                 empSchedule.wednesday = "";
@@ -72,29 +66,24 @@ class ManagerSchedulesCreate extends React.Component {
                 empSchedule.friday = "";
                 empSchedule.saturday = "";
                 empSchedule.sunday = "";
-                
                 this.setState({selectedEmpSchedule:empSchedule});
             }
             return empSchedule;
         });
         this.setState({ empSchedules: updatedEmpSchedules});
     };
-
     clearStates() {
         this.setState({ firstName: "", lastName: "", monday: "", tuesday: "", wednesday: "", thursday: "", friday: "", saturday: "", sunday: "", emp_id: "", selectedEmpSchedule: "", selectedEmpId: ""});
     };
     render() {
         return (
-            
-                <div className="row">
-
-                     <Link to="/ManagerHome" id="home" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">
-                     Dashboard<i className="material-icons right">dashboard</i>
-                     </Link>
-                   
-                    <div className="col m12" id="schedule-build">
-                        <div className="section">
-                            <h5 id="sch-editor">Schedule Editor</h5>
+            <div className="row">
+                <Link to="/ManagerHome" id="home" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons" href="/ManagerHome">
+                Dashboard<i className="material-icons right">dashboard</i>
+                </Link>
+                <div className="col m12" id="schedule-build">
+                    <div className="section">
+                        <h5 id="sch-editor">Schedule Editor</h5>
                             <table>
                                 <thead>
                                     <tr>
@@ -111,7 +100,6 @@ class ManagerSchedulesCreate extends React.Component {
                                 <tbody>
                                     {this.state.empSchedules.map((schedules, i) => {
                                         return (
-
                                             <tr className="table-row" key={i}>
                                                 <td className="fullName" id={this.state.empSchedules[i]._id}>
                                                 {schedules.firstName} {schedules.lastName}
@@ -228,15 +216,11 @@ class ManagerSchedulesCreate extends React.Component {
                                                     </select>
                                                     </div>
                                                 </td>
-
-                                               <td>
-                                                    <button id={i} onClick={this.handleUpdateEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 add-sch">Add</button>
-                                                
-                                               
-                                                    <button id={i} onClick={this.handleClearEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 clear-sch">Clear</button>
+                                                <td>
+                                                  <button id={i} onClick={this.handleUpdateEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 add-sch">Add</button>
+                                                  <button id={i} onClick={this.handleClearEmpSchedule.bind(this, i)} className="btn btn-small waves-effect waves-light green accent-3 clear-sch">Clear</button>
                                                 </td>
-                                                 </tr>
-                                            
+                                                </tr>
                                         );
                                     }, this)}
                                 </tbody>
@@ -247,5 +231,4 @@ class ManagerSchedulesCreate extends React.Component {
         );
     }
 };
-
 export default ManagerSchedulesCreate;

@@ -16,11 +16,11 @@ router.get('/user', (req, res, next) => {
 		return res.json({ user: null })
 	}
 })
-
+// Route to login
 router.post('/login', passport.authenticate('local'), (req, res) => {
 	res.json({ user: { email: req.user.email, _id: req.user._id, userType: req.user.userType } })
 })
-
+// Route to logout
 router.post('/logout', (req, res) => {
 	if (req.user) {
 		req.session.destroy()
@@ -30,7 +30,7 @@ router.post('/logout', (req, res) => {
 		return res.json({ msg: 'no user to log out!' })
 	}
 })
-
+// Route to signup
 router.post('/signup', (req, res) => {
 	const { email, password, userType } = req.body
 	// ADD VALIDATION

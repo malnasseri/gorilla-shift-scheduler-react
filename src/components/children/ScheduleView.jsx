@@ -8,7 +8,6 @@ class ScheduleView extends React.Component{
             empSchedules: [],
         };
     };
-
     componentDidMount() {
         helpers.getEmpSchedules().then((response) => {
             if (response !== this.state.empSchedules) {
@@ -17,7 +16,6 @@ class ScheduleView extends React.Component{
         });
     };
     render() {
-        
         return (
             <div className="row">
                 <div className="col s12">
@@ -75,5 +73,4 @@ class ScheduleView extends React.Component{
         );
     }
 };
-
 export default ScheduleView;

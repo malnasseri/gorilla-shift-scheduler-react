@@ -13,17 +13,9 @@ class ManagerHome extends React.Component {
           content: ""
         }
     }
-
     componentDidMount = () => {
         this.getAnnouncements();
     }
-
-    // componentDidUpdate = (prevState) => {
-    //     if (prevState.title !== this.state.title || prevState.content !== this.state.content) {
-    //         this.getAnnouncements();
-    //     }
-    // }
-
     getAnnouncements = () => {
         helpers.getAnnouncements().then((response) => {
             if(response.data.length > 0){
@@ -34,33 +26,27 @@ class ManagerHome extends React.Component {
             }
         });
     };
-
     updateAnnouncement = (title, content) => {
         this.setState({
             title: title,
             content: content
         })
     }
-
-
     render() {
         return (
             <div className="row">
-
                 <div className="col s12">
                     <ul className="left manager-btns">
                          <li> <Link to="/ManagerHome/employeeAll" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
                             Employee Management<i className="material-icons right">group</i>
-                        </Link></li>
+                         </Link></li>
                         <li> <Link to="ManagerHome/schedulesCreate" className="btn waves-effect waves-light blue lighten-3 black-text loginButtons">
                             Schedules<i className="material-icons right">access_time</i>
                         </Link></li>
                     </ul>
-                    
                     <h3 id="manager-h3"> Manager Dashboard</h3>
                  </div>
                 <ScheduleView />
-
                 <div className="row">     
                     <div className="col m6" id="manager-an-view">
                         <AnnouncementsView title={this.state.title} content={this.state.content}/>
@@ -73,6 +59,4 @@ class ManagerHome extends React.Component {
         );
     }
 };
-
 export default ManagerHome;
-

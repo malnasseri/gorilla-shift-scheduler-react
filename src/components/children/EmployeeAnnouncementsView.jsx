@@ -1,7 +1,6 @@
 import React from "react";
 
 class EmployeeAnnouncementsView extends React.Component {
-    
     render() {
         return (
             <div className="card-panel emp-announcement">
@@ -20,5 +19,4 @@ class EmployeeAnnouncementsView extends React.Component {
         );
     }
 };
-
 export default EmployeeAnnouncementsView;

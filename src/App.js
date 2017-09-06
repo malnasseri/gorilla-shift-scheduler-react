@@ -67,7 +67,6 @@ class App extends Component {
 		this._logout = this._logout.bind(this)
 		this._login = this._login.bind(this)
 	}
-
 	componentDidMount() {
 		axios.get('/auth/user').then(response => {
 			console.log(response.data)
@@ -88,7 +87,6 @@ class App extends Component {
 			}
 		})
 	}
-
 	_logout(event) {
 		event.preventDefault()
 		console.log('logging out')
@@ -105,7 +103,6 @@ class App extends Component {
 			}
 		})
 	}
-
 	_login(email, password) {
 		axios.post('/auth/login', {
 				email,
@@ -134,10 +131,8 @@ class App extends Component {
 				{/*  ROUTES */}
 				<Switch>
 					<Route exact path="/" render={() => <Main loggedIn={this.state.loggedIn} userType={this.state.userType} />} />
-					<Route path="/login" render={() => <LoginForm _login={this._login} loggedIn={this.state.loggedIn} />}
-					/>
+					<Route path="/login" render={() => <LoginForm _login={this._login} loggedIn={this.state.loggedIn} />} />
 					<Route path="/signup" component={SignupForm} />
-					
 					<Route exact path="/ManagerHome" render={() => <ManagerHome loggedIn={this.state.loggedIn} />} />
 					<Route path="/ManagerHome/employeeAll" component={ManagerEmployeeAll} />
           <Route path="/ManagerHome/schedulesCreate" component={ManagerSchedulesCreate} />
@@ -150,5 +145,4 @@ class App extends Component {
 		)
 	}
 }
-
 export default App

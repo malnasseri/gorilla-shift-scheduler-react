@@ -6,9 +6,9 @@ class Manager extends React.Component {
         console.log("LOGGED IN: " + this.props.loggedIn);
         if(this.props.loggedIn){
             return (
-                    <div className="container">
-                        {this.props.children}
-                    </div>
+                <div className="container">
+                    {this.props.children}
+                </div>
             );
         }
         else {

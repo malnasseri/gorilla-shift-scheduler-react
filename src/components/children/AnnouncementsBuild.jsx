@@ -9,23 +9,16 @@ class AnnouncementsBuild extends React.Component {
           content: ""
         }
     }
-
-    componentDidMount(){
-        //this.getAnnouncements();
-    }
-
     getAnnouncements(){
         helpers.getAnnouncements().then((response) => {
         });
     }
-
     handleAnnouncementBuild = (event) => {
         event.preventDefault();
         this.setState({
         [event.target.id]: event.target.value 
     });
     };
-
     addAnnouncements = (event) =>{
         event.preventDefault();
         helpers.addAnnouncements(this.state.title, this.state.content).then((response) => {
@@ -34,7 +27,6 @@ class AnnouncementsBuild extends React.Component {
         });
         this.clearForm();
     };
-
     clearForm() {
         var elements = document.getElementsByTagName("input");
         for (var i=0; i < elements.length; i++) {
@@ -42,11 +34,9 @@ class AnnouncementsBuild extends React.Component {
             elements[i].classList.remove("valid");
         };
     };
-
     clearStates() {
         this.setState({ title: "", content: "" });
     };
-
     render() {
         return (
             <div className="card-panel" id="add-announcment">
@@ -91,8 +81,4 @@ class AnnouncementsBuild extends React.Component {
         );
     }
 };
-
 export default AnnouncementsBuild;
-
-
-

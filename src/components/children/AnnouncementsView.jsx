@@ -1,7 +1,6 @@
 import React from "react";
 
 class AnnouncementsView extends React.Component {
-    
     render() {
         return (
             <div className="card-panel announcement">
@@ -20,5 +19,4 @@ class AnnouncementsView extends React.Component {
         );
     }
 };
-
 export default AnnouncementsView;
